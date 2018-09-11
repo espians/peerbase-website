@@ -13,7 +13,7 @@ import (
 // TODO(tav): Switch over to using `mod` and Go module proxy.
 var goMeta = []byte(`<!doctype html>
 <meta name="go-import" content="peerbase.net/go git https://github.com/peerbase/peerbase">
-<meta name="go-source" content="peerbase.net/go _ https://github.com/peerbase/peerbase/tree/master{/dir} https://github.com/peerbase/peerbase/blob/master{/dir}/{file}#L{line}">`)
+<meta name="go-source" content="peerbase.net/go https://github.com/peerbase/peerbase https://github.com/peerbase/peerbase/tree/master{/dir} https://github.com/peerbase/peerbase/blob/master{/dir}/{file}#L{line}">`)
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	if !appengine.IsDevAppServer() {
