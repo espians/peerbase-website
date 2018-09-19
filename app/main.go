@@ -12,8 +12,8 @@ import (
 
 // TODO(tav): Switch over to using `mod` and Go module proxy.
 var goMeta = []byte(`<!doctype html>
-<meta name="go-import" content="peerbase.net/go git https://github.com/peerbase/peerbase">
-<meta name="go-source" content="peerbase.net/go https://github.com/peerbase/peerbase https://github.com/peerbase/peerbase/tree/master{/dir} https://github.com/peerbase/peerbase/blob/master{/dir}/{file}#L{line}">`)
+<meta name="go-import" content="peerbase.net/go git https://github.com/espians/peerbase">
+<meta name="go-source" content="peerbase.net/go https://github.com/espians/peerbase https://github.com/espians/peerbase/tree/master{/dir} https://github.com/espians/peerbase/blob/master{/dir}/{file}#L{line}">`)
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	if !appengine.IsDevAppServer() {
@@ -30,7 +30,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 		handleGo(w, r, split[2:])
 		return
 	}
-	http.Redirect(w, r, "https://github.com/peerbase/peerbase", 302)
+	http.Redirect(w, r, "https://github.com/espians/peerbase", 302)
 }
 
 func handleGo(w http.ResponseWriter, r *http.Request, path []string) {
