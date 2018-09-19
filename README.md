@@ -8,5 +8,5 @@ into the Public Domain through our [UNLICENSE].
 —  
 Enjoy, tav &lt;tav@espians.com&gt;
 
-[authors]: https://github.com/peerbase/website/blob/master/AUTHORS.yaml
-[unlicense]: https://github.com/peerbase/website/blob/master/UNLICENSE.md
+[authors]: https://github.com/espians/peerbase-website/blob/master/AUTHORS.eon
+[unlicense]: https://github.com/espians/peerbase-website/blob/master/UNLICENSE.md
